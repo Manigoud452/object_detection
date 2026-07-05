@@ -1,0 +1,10 @@
+version: '2.1'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gallery-app:latest
+    working_dir: /app
+    ports:
+      - "8080:8080"
